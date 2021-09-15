@@ -44,11 +44,11 @@ class BinaryTreeLevelOrderTraversal {
 }
 
 fun main() {
-    val result = BinaryTreeLevelOrderTraversal().levelOrder(BinaryTreeLevelOrderTraversalTests().test1())
+    val result = BinaryTreeLevelOrderTraversal().levelOrder(BinaryTreeLevelOrderTraversalTests.test1())
     print(result)
 }
 
-class BinaryTreeLevelOrderTraversalTests {
+object BinaryTreeLevelOrderTraversalTests {
     fun test1(): BinaryTreeLevelOrderTraversal.TreeNode {
         val node1 = BinaryTreeLevelOrderTraversal.TreeNode(3)
         val node2 = BinaryTreeLevelOrderTraversal.TreeNode(9)

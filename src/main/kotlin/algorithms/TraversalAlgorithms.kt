@@ -43,74 +43,76 @@ class TraversalAlgorithms {
 }
 
 fun main() {
-    testDFS1()
-    testDFS2()
+    TraversalAlgorithmsTests.testDFS1()
+    TraversalAlgorithmsTests.testDFS2()
 }
 
-fun testDFS1() {
-    println("Test DFS 1: ")
-    val graph = mapOf(
-        '1' to mutableListOf('2', '3', '4'),
-        '2' to mutableListOf('5'),
-        '3' to mutableListOf('6', '7'),
-        '4' to mutableListOf('8'),
-        '5' to mutableListOf(),
-        '6' to mutableListOf('9'),
-        '7' to mutableListOf(),
-        '8' to mutableListOf(),
-        '9' to mutableListOf()
-    )
+object TraversalAlgorithmsTests {
+    fun testDFS1() {
+        println("Test DFS 1: ")
+        val graph = mapOf(
+            '1' to mutableListOf('2', '3', '4'),
+            '2' to mutableListOf('5'),
+            '3' to mutableListOf('6', '7'),
+            '4' to mutableListOf('8'),
+            '5' to mutableListOf(),
+            '6' to mutableListOf('9'),
+            '7' to mutableListOf(),
+            '8' to mutableListOf(),
+            '9' to mutableListOf()
+        )
 
-    TraversalAlgorithms().depthFirstSearch(graph, '1')
-}
+        TraversalAlgorithms().depthFirstSearch(graph, '1')
+    }
 
-fun testDFS2() {
-    println("Test DFS 2: ")
-    val graph = mapOf(
-        'A' to mutableListOf('B', 'S'),
-        'B' to mutableListOf(),
-        'S' to mutableListOf('C', 'G'),
-        'C' to mutableListOf('D', 'E', 'F', 'S'),
-        'G' to mutableListOf('F', 'H', 'S'),
-        'D' to mutableListOf('C'),
-        'E' to mutableListOf('C', 'H'),
-        'F' to mutableListOf('C', 'G'),
-        'H' to mutableListOf('E', 'G')
-    )
+    fun testDFS2() {
+        println("Test DFS 2: ")
+        val graph = mapOf(
+            'A' to mutableListOf('B', 'S'),
+            'B' to mutableListOf(),
+            'S' to mutableListOf('C', 'G'),
+            'C' to mutableListOf('D', 'E', 'F', 'S'),
+            'G' to mutableListOf('F', 'H', 'S'),
+            'D' to mutableListOf('C'),
+            'E' to mutableListOf('C', 'H'),
+            'F' to mutableListOf('C', 'G'),
+            'H' to mutableListOf('E', 'G')
+        )
 
-    TraversalAlgorithms().depthFirstSearch(graph, 'A')
-}
+        TraversalAlgorithms().depthFirstSearch(graph, 'A')
+    }
 
-fun testBFS1() {
-    println("Test BFS 1: ")
-    val graph = mapOf(
-        '1' to mutableListOf('2', '3', '4'),
-        '2' to mutableListOf('5'),
-        '3' to mutableListOf('6', '7'),
-        '4' to mutableListOf('8'),
-        '5' to mutableListOf(),
-        '6' to mutableListOf('9'),
-        '7' to mutableListOf(),
-        '8' to mutableListOf(),
-        '9' to mutableListOf()
-    )
+    fun testBFS1() {
+        println("Test BFS 1: ")
+        val graph = mapOf(
+            '1' to mutableListOf('2', '3', '4'),
+            '2' to mutableListOf('5'),
+            '3' to mutableListOf('6', '7'),
+            '4' to mutableListOf('8'),
+            '5' to mutableListOf(),
+            '6' to mutableListOf('9'),
+            '7' to mutableListOf(),
+            '8' to mutableListOf(),
+            '9' to mutableListOf()
+        )
 
-    TraversalAlgorithms().breadthFirstSearch(graph, '1')
-}
+        TraversalAlgorithms().breadthFirstSearch(graph, '1')
+    }
 
-fun testBFS2() {
-    println("Test BFS 2: ")
-    val graph = mapOf(
-        'A' to mutableListOf('B', 'S'),
-        'B' to mutableListOf(),
-        'S' to mutableListOf('C', 'G'),
-        'C' to mutableListOf('D', 'E', 'F', 'S'),
-        'G' to mutableListOf('F', 'H', 'S'),
-        'D' to mutableListOf('C'),
-        'E' to mutableListOf('C', 'H'),
-        'F' to mutableListOf('C', 'G'),
-        'H' to mutableListOf('E', 'G')
-    )
+    fun testBFS2() {
+        println("Test BFS 2: ")
+        val graph = mapOf(
+            'A' to mutableListOf('B', 'S'),
+            'B' to mutableListOf(),
+            'S' to mutableListOf('C', 'G'),
+            'C' to mutableListOf('D', 'E', 'F', 'S'),
+            'G' to mutableListOf('F', 'H', 'S'),
+            'D' to mutableListOf('C'),
+            'E' to mutableListOf('C', 'H'),
+            'F' to mutableListOf('C', 'G'),
+            'H' to mutableListOf('E', 'G')
+        )
 
-    TraversalAlgorithms().breadthFirstSearch(graph, 'A')
+        TraversalAlgorithms().breadthFirstSearch(graph, 'A')
+    }
 }

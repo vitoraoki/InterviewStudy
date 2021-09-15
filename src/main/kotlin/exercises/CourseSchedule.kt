@@ -51,14 +51,14 @@ class CourseSchedule {
 }
 
 fun main() {
-    val courses = CourseScheduleTests().test1()
+    val courses = CourseScheduleTests.test1()
 
     val result = CourseSchedule().scheduleCourse(courses)
 
     println(result)
 }
 
-private class CourseScheduleTests {
+object CourseScheduleTests {
     fun test1() = arrayOf(
         intArrayOf(100, 200), intArrayOf(200, 1300), intArrayOf(1000, 1250), intArrayOf(2000, 3200)
     )

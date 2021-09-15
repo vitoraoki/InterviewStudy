@@ -25,11 +25,11 @@ class WordSquares {
 * L A D Y
 */
 fun main() {
-    val listOfStrings = WordSquaresTests().test1()
+    val listOfStrings = WordSquaresTests.test1()
     println(WordSquares().isSquareWords(listOfStrings.size, listOfStrings))
 }
 
-class WordSquaresTests {
+object WordSquaresTests {
     fun test1() = listOf("BALL", "AREA", "LEAD", "LADY")
     fun test2() = listOf("BALL", "ARET", "LEAD", "LADY")
     fun test3() = listOf("BA", "AB")

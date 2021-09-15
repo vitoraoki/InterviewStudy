@@ -52,12 +52,12 @@ fun printList(head: ListNode?) {
 }
 
 fun main() {
-    val result = OddEvenLinkedList().oddEvenList(OddEvenLinkedListTests().test1())
+    val result = OddEvenLinkedList().oddEvenList(OddEvenLinkedListTests.test1())
 
     printList(result)
 }
 
-class OddEvenLinkedListTests {
+object OddEvenLinkedListTests {
     fun test1(): ListNode {
         val node1 = ListNode(1)
         val node2 = ListNode(2)
