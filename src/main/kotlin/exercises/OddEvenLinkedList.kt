@@ -1,10 +1,8 @@
 package exercises
 
-//https://leetcode.com/problems/odd-even-linked-list/
+import datastructure.ListNode
 
-class ListNode(var `val`: Int) {
-    var next: ListNode? = null
-}
+//https://leetcode.com/problems/odd-even-linked-list/
 
 class OddEvenLinkedList {
     fun oddEvenList(head: ListNode?): ListNode? {

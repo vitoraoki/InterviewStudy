@@ -1,13 +1,10 @@
 package exercises
 
+import datastructure.TreeNode
+
 //https://leetcode.com/problems/binary-tree-level-order-traversal/
 
 class BinaryTreeLevelOrderTraversal {
-    class TreeNode(var `val`: Int) {
-        var left: TreeNode? = null
-        var right: TreeNode? = null
-    }
-
     fun levelOrder(root: TreeNode?): List<List<Int>> {
 
         if (root == null) {
@@ -49,12 +46,12 @@ fun main() {
 }
 
 object BinaryTreeLevelOrderTraversalTests {
-    fun test1(): BinaryTreeLevelOrderTraversal.TreeNode {
-        val node1 = BinaryTreeLevelOrderTraversal.TreeNode(3)
-        val node2 = BinaryTreeLevelOrderTraversal.TreeNode(9)
-        val node3 = BinaryTreeLevelOrderTraversal.TreeNode(20)
-        val node4 = BinaryTreeLevelOrderTraversal.TreeNode(15)
-        val node5 = BinaryTreeLevelOrderTraversal.TreeNode(7)
+    fun test1(): TreeNode {
+        val node1 = TreeNode(3)
+        val node2 = TreeNode(9)
+        val node3 = TreeNode(20)
+        val node4 = TreeNode(15)
+        val node5 = TreeNode(7)
 
         node1.left = node2
         node1.right = node3
@@ -64,16 +61,16 @@ object BinaryTreeLevelOrderTraversalTests {
         return node1
     }
 
-    fun test2(): BinaryTreeLevelOrderTraversal.TreeNode {
-        val node1 = BinaryTreeLevelOrderTraversal.TreeNode(1)
+    fun test2(): TreeNode {
+        val node1 = TreeNode(1)
         return node1
     }
 
-    fun test3(): BinaryTreeLevelOrderTraversal.TreeNode? = null
+    fun test3(): TreeNode? = null
 
-    fun test4(): BinaryTreeLevelOrderTraversal.TreeNode {
-        val node1 = BinaryTreeLevelOrderTraversal.TreeNode(3)
-        val node2 = BinaryTreeLevelOrderTraversal.TreeNode(9)
+    fun test4(): TreeNode {
+        val node1 = TreeNode(3)
+        val node2 = TreeNode(9)
 
         node1.left = node2
 

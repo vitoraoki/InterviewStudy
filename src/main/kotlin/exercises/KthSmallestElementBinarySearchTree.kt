@@ -1,11 +1,8 @@
 package exercises
 
-class KthSmallestElementBinarySearchTree {
-    class TreeNode(var `val`: Int) {
-        var left: TreeNode? = null
-        var right: TreeNode? = null
-    }
+import datastructure.TreeNode
 
+class KthSmallestElementBinarySearchTree {
     fun kthSmallest(root: TreeNode?, k: Int): Int {
         if (root != null) {
             return inorderTraversal(root)[k - 1]
@@ -31,17 +28,17 @@ class KthSmallestElementBinarySearchTree {
 }
 
 fun main() {
-    val node1 = KthSmallestElementBinarySearchTree.TreeNode(1)
-    val node2 = KthSmallestElementBinarySearchTree.TreeNode(2).apply {
+    val node1 = TreeNode(1)
+    val node2 = TreeNode(2).apply {
         left = node1
     }
-    val node4 = KthSmallestElementBinarySearchTree.TreeNode(4)
-    val node3 = KthSmallestElementBinarySearchTree.TreeNode(3).apply {
+    val node4 = TreeNode(4)
+    val node3 = TreeNode(3).apply {
         left = node2
         right = node4
     }
-    val node6 = KthSmallestElementBinarySearchTree.TreeNode(6)
-    val node5 = KthSmallestElementBinarySearchTree.TreeNode(5).apply {
+    val node6 = TreeNode(6)
+    val node5 = TreeNode(5).apply {
         left = node3
         right = node6
     }

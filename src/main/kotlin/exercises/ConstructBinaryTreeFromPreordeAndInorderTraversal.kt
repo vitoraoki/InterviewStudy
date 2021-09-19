@@ -1,13 +1,10 @@
 package exercises
 
+import datastructure.TreeNode
+
 //https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
 
 class ConstructBinaryTreeFromPreorderAndInorderTraversal {
-    class TreeNode(var `val`: Int) {
-        var left: TreeNode? = null
-        var right: TreeNode? = null
-    }
-
     private var preorderIndex: Int = 0
 
     private fun searchIndex(inorder: IntArray, rootValue: Int): Int {
@@ -49,25 +46,25 @@ fun main() {
 }
 
 object ConstructBinaryTreeFromPreorderAndInorderTraversalTests {
-    fun test1(): ConstructBinaryTreeFromPreorderAndInorderTraversal.TreeNode {
+    fun test1(): TreeNode {
         val preorder = intArrayOf(3, 9, 20, 15, 7)
         val inorder = intArrayOf(9, 3, 15, 20, 7)
         return ConstructBinaryTreeFromPreorderAndInorderTraversal().buildTree(preorder, inorder)
     }
 
-    fun test2(): ConstructBinaryTreeFromPreorderAndInorderTraversal.TreeNode {
+    fun test2(): TreeNode {
         val preorder = intArrayOf(-1)
         val inorder = intArrayOf(-1)
         return ConstructBinaryTreeFromPreorderAndInorderTraversal().buildTree(preorder, inorder)
     }
 
-    fun test3(): ConstructBinaryTreeFromPreorderAndInorderTraversal.TreeNode {
+    fun test3(): TreeNode {
         val preorder = intArrayOf(1, 2)
         val inorder = intArrayOf(2, 1)
         return ConstructBinaryTreeFromPreorderAndInorderTraversal().buildTree(preorder, inorder)
     }
 
-    fun test4(): ConstructBinaryTreeFromPreorderAndInorderTraversal.TreeNode {
+    fun test4(): TreeNode {
         val preorder = intArrayOf(1, 2, 3)
         val inorder = intArrayOf(1, 2, 3)
         return ConstructBinaryTreeFromPreorderAndInorderTraversal().buildTree(preorder, inorder)
