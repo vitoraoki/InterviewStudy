@@ -1,5 +1,7 @@
 package exercises
 
+//https://leetcode.com/problems/binary-watch/
+
 class BinaryWatch {
     fun readBinaryWatch(turnedOn: Int): List<String> {
         val times = mutableListOf<String>()

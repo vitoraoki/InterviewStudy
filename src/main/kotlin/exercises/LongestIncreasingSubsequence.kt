@@ -1,4 +1,6 @@
-package exercises//https://leetcode.com/problems/longest-increasing-subsequence/
+package exercises
+
+//https://leetcode.com/problems/longest-increasing-subsequence/
 
 class LongestIncreasingSubsequence {
     fun lengthOfLIS(nums: IntArray): Int {

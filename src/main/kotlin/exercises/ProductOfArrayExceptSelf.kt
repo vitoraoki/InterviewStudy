@@ -2,6 +2,8 @@ package exercises
 
 import java.util.*
 
+//https://leetcode.com/problems/product-of-array-except-self/
+
 class ProductOfArrayExceptSelf {
     fun productExceptSelf(nums: IntArray): IntArray {
         val listOfProducts = IntArray(nums.size) {1}

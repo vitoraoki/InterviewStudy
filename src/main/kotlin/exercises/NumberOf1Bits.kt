@@ -1,5 +1,7 @@
 package exercises
 
+//https://leetcode.com/problems/number-of-1-bits
+
 class NumberOf1Bits {
     fun hammingWeight(n:Int):Int {
         var count = 0
@@ -14,6 +16,6 @@ class NumberOf1Bits {
 }
 
 fun main() {
-    val n = -3
+    val n = 11
     println(NumberOf1Bits().hammingWeight(n))
 }

@@ -1,4 +1,6 @@
-package exercises//https://leetcode.com/problems/distribute-candies/submissions/
+package exercises
+
+//https://leetcode.com/problems/distribute-candies/submissions/
 
 /*
 * Perguntas:

@@ -1,5 +1,7 @@
 package exercises
 
+//https://leetcode.com/problems/maximum-product-subarray
+
 class MaximumProductSubarray {
     fun maxProduct(nums: IntArray): Int {
         if (nums.size == 1) return nums[0]

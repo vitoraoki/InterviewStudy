@@ -2,6 +2,8 @@ package exercises
 
 import datastructure.TreeNode
 
+//https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+
 class KthSmallestElementBinarySearchTree {
     fun kthSmallest(root: TreeNode?, k: Int): Int {
         if (root != null) {

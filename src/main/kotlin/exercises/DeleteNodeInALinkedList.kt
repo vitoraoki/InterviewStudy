@@ -2,6 +2,8 @@ package exercises
 
 import datastructure.ListNode
 
+//https://leetcode.com/problems/delete-node-in-a-linked-list/
+
 class DeleteNodeInALinkedList {
     fun deleteNode(node: ListNode?) {
         var currentNode = node
