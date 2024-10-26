@@ -22,6 +22,7 @@ This section has a list of references used to study the theory of Algorithms and
 - [KMM x KMP](https://blog.jetbrains.com/kotlin/2023/07/update-on-the-name-of-kotlin-multiplatform/)
 - [Jetbrains Compose Multiplatform tutorial](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform-create-first-app.html)
 - [Philipp Lackner first Compose Multiplatform app tutorial](https://www.youtube.com/watch?v=ZxBUd2TbVGk)
+- [Philipp Lackner KMP playlist](https://www.youtube.com/playlist?list=PLQkwcJG4YTCS55alEYv3J8CD4BXhqLUuk)
 
 # ✍️ Exercises
 This section has a list of sites with exercises, possible solutions, explanations and etc.
