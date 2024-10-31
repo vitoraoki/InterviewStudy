@@ -1,8 +1,8 @@
 # Introduction
-Welcome to my study repository. This repository will be updated with the infos, links and codes that I use in my study journey. It will focus mainly in Algorithm and Android/KMM interviews. All the code is written in Kotlin (but it can change in the future if I change my mind hehehe). I hope it can be as useful to you as it is to me :)
+Welcome to my study repository. This repository will be updated with the infos, links and codes that I use in my study journey. It will focus mainly in Algorithms, Android and KMP. All the code is written in Kotlin (but it can change in the future if I change my mind hehehe). I hope it can be as useful to you as it is to me :)
 
 # 📝 Theory
-This section has a list of references used to study the theory of Algorithms and Android/KMM development
+This section has a list of references used to study the theory of Algorithms, Android and KMP development
 
 ## 💡 Algorithm
 - Book "Cracking the coding interview"
