@@ -16,6 +16,14 @@ This section has a list of references used to study the theory of Algorithms and
 
 ## 📱 Android
 
+### Dependency Injection
+- [Android Dependency Injection](https://developer.android.com/training/dependency-injection)
+- [Dependency Injection with Dagger](https://developer.android.com/training/dependency-injection/dagger-android)
+- [Dependency Injection with Hilt](https://developer.android.com/training/dependency-injection/hilt-android)
+- [Dependency Injection with Anvil](https://gpeal.medium.com/dagger-anvil-learning-to-love-dependency-injection-on-android-8fad3d5530c9)
+- [Dependency Injection with Koin](https://insert-koin.io/docs/reference/koin-android/start)
+- [Philipp Lackner dependency injection with Hilt tutorial](https://www.youtube.com/watch?v=bbMsuI2p1DQ&t=1248s)
+
 ## 💻 KMP
 - [Kotlin Multiplatform main page](https://www.jetbrains.com/kotlin-multiplatform/)
 - [Compose Multiplatform main page](https://www.jetbrains.com/compose-multiplatform/)
@@ -23,6 +31,11 @@ This section has a list of references used to study the theory of Algorithms and
 - [Jetbrains Compose Multiplatform tutorial](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform-create-first-app.html)
 - [Philipp Lackner first Compose Multiplatform app tutorial](https://www.youtube.com/watch?v=ZxBUd2TbVGk)
 - [Philipp Lackner KMP playlist](https://www.youtube.com/playlist?list=PLQkwcJG4YTCS55alEYv3J8CD4BXhqLUuk)
+
+### Dependency Injection
+- [Dependency Injection with Koin](https://insert-koin.io/docs/reference/koin-mp/kmp)
+- [Philipp Lackner KMP dependency injection with Koin](https://www.youtube.com/watch?v=TAKZy3uQTdE&list=PLQkwcJG4YTCS55alEYv3J8CD4BXhqLUuk&index=5)
+
 
 # ✍️ Exercises
 This section has a list of sites with exercises, possible solutions, explanations and etc.
