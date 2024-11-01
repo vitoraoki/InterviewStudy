@@ -22,6 +22,7 @@ This section has a list of references used to study the theory of Algorithms, An
 - [Dependency Injection with Hilt](https://developer.android.com/training/dependency-injection/hilt-android)
 - [Dependency Injection with Anvil](https://gpeal.medium.com/dagger-anvil-learning-to-love-dependency-injection-on-android-8fad3d5530c9)
 - [Dependency Injection with Koin](https://insert-koin.io/docs/reference/koin-android/start)
+- [Hilt and Dagger cheat sheet](https://developer.android.com/training/dependency-injection/hilt-cheatsheet)
 - [Philipp Lackner dependency injection with Hilt tutorial](https://www.youtube.com/watch?v=bbMsuI2p1DQ&t=1248s)
 
 ## 💻 KMP
