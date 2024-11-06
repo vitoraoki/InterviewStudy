@@ -32,6 +32,7 @@ This section has a list of references used to study the theory of Algorithms, An
 - [Jetbrains Compose Multiplatform tutorial](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform-create-first-app.html)
 - [Philipp Lackner first Compose Multiplatform app tutorial](https://www.youtube.com/watch?v=ZxBUd2TbVGk)
 - [Philipp Lackner KMP playlist](https://www.youtube.com/playlist?list=PLQkwcJG4YTCS55alEYv3J8CD4BXhqLUuk)
+- [Setup resources](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform-resources-setup.html)
 
 ### Dependency Injection
 - [Dependency Injection with Koin](https://insert-koin.io/docs/reference/koin-mp/kmp)
