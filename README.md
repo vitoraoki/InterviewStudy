@@ -16,6 +16,11 @@ This section has a list of references used to study the theory of Algorithms, An
 
 ## 📱 Android
 
+- [Philipp Lackner Result handling example](https://www.youtube.com/watch?v=MiLN2vs2Oe0)
+
+### Architecture
+- [Android app architecture guide](https://developer.android.com/topic/architecture)
+
 ### Dependency Injection
 - [Android Dependency Injection](https://developer.android.com/training/dependency-injection)
 - [Dependency Injection with Dagger](https://developer.android.com/training/dependency-injection/dagger-android)
@@ -33,11 +38,11 @@ This section has a list of references used to study the theory of Algorithms, An
 - [Philipp Lackner first Compose Multiplatform app tutorial](https://www.youtube.com/watch?v=ZxBUd2TbVGk)
 - [Philipp Lackner KMP playlist](https://www.youtube.com/playlist?list=PLQkwcJG4YTCS55alEYv3J8CD4BXhqLUuk)
 - [Setup resources](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform-resources-setup.html)
+- [Ktor Response validation](https://ktor.io/docs/client-response-validation.html)
 
 ### Dependency Injection
 - [Dependency Injection with Koin](https://insert-koin.io/docs/reference/koin-mp/kmp)
 - [Philipp Lackner KMP dependency injection with Koin](https://www.youtube.com/watch?v=TAKZy3uQTdE&list=PLQkwcJG4YTCS55alEYv3J8CD4BXhqLUuk&index=5)
-
 
 # ✍️ Exercises
 This section has a list of sites with exercises, possible solutions, explanations and etc.
