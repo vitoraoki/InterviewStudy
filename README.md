@@ -39,6 +39,7 @@ This section has a list of references used to study the theory of Algorithms, An
 - [Philipp Lackner KMP playlist](https://www.youtube.com/playlist?list=PLQkwcJG4YTCS55alEYv3J8CD4BXhqLUuk)
 - [Setup resources](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform-resources-setup.html)
 - [Ktor Response validation](https://ktor.io/docs/client-response-validation.html)
+- [Testing documentation](https://www.jetbrains.com/help/kotlin-multiplatform-dev/multiplatform-run-tests.html)
 
 ### Dependency Injection
 - [Dependency Injection with Koin](https://insert-koin.io/docs/reference/koin-mp/kmp)
