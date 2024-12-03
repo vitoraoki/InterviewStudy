@@ -20,6 +20,12 @@ This section has a list of references used to study the theory of Algorithms, An
 
 ### Architecture
 - [Android app architecture guide](https://developer.android.com/topic/architecture)
+- [MVVM x MVI Comparison Article (PT-BR only)](https://medium.com/@lucas-cordeiro/mvvm-vs-mvi-guia-prático-para-desenvolvedores-android-25bfade62478)
+- [MVVM and MVI combiined (Example against MVC)](https://medium.com/@mortitech/combining-mvvm-and-mvi-with-kotlin-flows-part1-48f7dd426341)
+- [MVC x MVP x MVVM (PT-BR only)](https://cwi.com.br/blog/design-patterns-android/)
+- [Philipp Lackner MVVM x MVI](https://www.youtube.com/watch?v=b2z1jvD4VMQ&t=736s)
+- Book "Clean Architecture"
+- [Clean Architecture guide](https://medium.com/@DrunknCode/clean-architecture-simplified-and-in-depth-guide-026333c54454)
 
 ### Dependency Injection
 - [Android Dependency Injection](https://developer.android.com/training/dependency-injection)
@@ -40,6 +46,9 @@ This section has a list of references used to study the theory of Algorithms, An
 - [Setup resources](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform-resources-setup.html)
 - [Ktor Response validation](https://ktor.io/docs/client-response-validation.html)
 - [Testing documentation](https://www.jetbrains.com/help/kotlin-multiplatform-dev/multiplatform-run-tests.html)
+
+### Architecture
+- [MVVM x MVI in KMP](https://www.kotlinmultiplatform.dev/mvvm-vs-mvi-which-architecture-suits-your-kotlin-multiplatform-project/)
 
 ### Dependency Injection
 - [Dependency Injection with Koin](https://insert-koin.io/docs/reference/koin-mp/kmp)
