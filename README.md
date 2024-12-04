@@ -16,12 +16,32 @@ This section has a list of references used to study the theory of Algorithms, An
 
 ## 📱 Android
 
+- [Philipp Lackner Result handling example](https://www.youtube.com/watch?v=MiLN2vs2Oe0)
+
+### Architecture
+- [Android app architecture guide](https://developer.android.com/topic/architecture)
+- [MVVM x MVI Comparison Article (PT-BR only)](https://medium.com/@lucas-cordeiro/mvvm-vs-mvi-guia-prático-para-desenvolvedores-android-25bfade62478)
+- [MVVM and MVI combiined (Example against MVC)](https://medium.com/@mortitech/combining-mvvm-and-mvi-with-kotlin-flows-part1-48f7dd426341)
+- [MVC x MVP x MVVM (PT-BR only)](https://cwi.com.br/blog/design-patterns-android/)
+- [Philipp Lackner MVVM x MVI](https://www.youtube.com/watch?v=b2z1jvD4VMQ&t=736s)
+
+#### Clean Architecture
+- Book "Clean Architecture"
+- [Clean Architecture guide](https://medium.com/@DrunknCode/clean-architecture-simplified-and-in-depth-guide-026333c54454)
+
+#### SOLID Principles
+- Book "Clean Code"
+- [Guide to SOLID Principles](https://www.baeldung.com/solid-principles)
+- [SOLID Principles explanation with real life examples](https://www.geeksforgeeks.org/solid-principle-in-programming-understand-with-real-life-examples/)
+- [SOLID Principles in Pictures](https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898) 
+
 ### Dependency Injection
 - [Android Dependency Injection](https://developer.android.com/training/dependency-injection)
 - [Dependency Injection with Dagger](https://developer.android.com/training/dependency-injection/dagger-android)
 - [Dependency Injection with Hilt](https://developer.android.com/training/dependency-injection/hilt-android)
 - [Dependency Injection with Anvil](https://gpeal.medium.com/dagger-anvil-learning-to-love-dependency-injection-on-android-8fad3d5530c9)
 - [Dependency Injection with Koin](https://insert-koin.io/docs/reference/koin-android/start)
+- [Hilt and Dagger cheat sheet](https://developer.android.com/training/dependency-injection/hilt-cheatsheet)
 - [Philipp Lackner dependency injection with Hilt tutorial](https://www.youtube.com/watch?v=bbMsuI2p1DQ&t=1248s)
 
 ## 💻 KMP
@@ -31,11 +51,16 @@ This section has a list of references used to study the theory of Algorithms, An
 - [Jetbrains Compose Multiplatform tutorial](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform-create-first-app.html)
 - [Philipp Lackner first Compose Multiplatform app tutorial](https://www.youtube.com/watch?v=ZxBUd2TbVGk)
 - [Philipp Lackner KMP playlist](https://www.youtube.com/playlist?list=PLQkwcJG4YTCS55alEYv3J8CD4BXhqLUuk)
+- [Setup resources](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform-resources-setup.html)
+- [Ktor Response validation](https://ktor.io/docs/client-response-validation.html)
+- [Testing documentation](https://www.jetbrains.com/help/kotlin-multiplatform-dev/multiplatform-run-tests.html)
+
+### Architecture
+- [MVVM x MVI in KMP](https://www.kotlinmultiplatform.dev/mvvm-vs-mvi-which-architecture-suits-your-kotlin-multiplatform-project/)
 
 ### Dependency Injection
 - [Dependency Injection with Koin](https://insert-koin.io/docs/reference/koin-mp/kmp)
 - [Philipp Lackner KMP dependency injection with Koin](https://www.youtube.com/watch?v=TAKZy3uQTdE&list=PLQkwcJG4YTCS55alEYv3J8CD4BXhqLUuk&index=5)
-
 
 # ✍️ Exercises
 This section has a list of sites with exercises, possible solutions, explanations and etc.
