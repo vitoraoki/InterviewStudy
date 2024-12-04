@@ -24,8 +24,16 @@ This section has a list of references used to study the theory of Algorithms, An
 - [MVVM and MVI combiined (Example against MVC)](https://medium.com/@mortitech/combining-mvvm-and-mvi-with-kotlin-flows-part1-48f7dd426341)
 - [MVC x MVP x MVVM (PT-BR only)](https://cwi.com.br/blog/design-patterns-android/)
 - [Philipp Lackner MVVM x MVI](https://www.youtube.com/watch?v=b2z1jvD4VMQ&t=736s)
+
+#### Clean Architecture
 - Book "Clean Architecture"
 - [Clean Architecture guide](https://medium.com/@DrunknCode/clean-architecture-simplified-and-in-depth-guide-026333c54454)
+
+#### SOLID Principles
+- Book "Clean Code"
+- [Guide to SOLID Principles](https://www.baeldung.com/solid-principles)
+- [SOLID Principles explanation with real life examples](https://www.geeksforgeeks.org/solid-principle-in-programming-understand-with-real-life-examples/)
+- [SOLID Principles in Pictures](https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898) 
 
 ### Dependency Injection
 - [Android Dependency Injection](https://developer.android.com/training/dependency-injection)
