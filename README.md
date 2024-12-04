@@ -4,7 +4,7 @@ Welcome to my study repository. This repository will be updated with the infos, 
 # 📝 Theory
 This section has a list of references used to study the theory of Algorithms, Android and KMP development
 
-## 💡 Algorithm
+## 💡 Algorithms
 - Book "Cracking the coding interview"
 - [Top 10 Algorithms in Interview Questions](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/)
 - [KDN251 Interviews repository](https://github.com/kdn251/interviews#graph-algorithms)
