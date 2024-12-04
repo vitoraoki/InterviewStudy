@@ -1,7 +1,5 @@
 package algorithms
 
-import kotlin.math.floor
-
 class Heap {
     private fun swap(heap: MutableList<Int>, current: Int, new: Int) {
         val aux = heap[current]

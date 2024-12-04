@@ -27,7 +27,7 @@ class RotateImage {
         }
     }
 
-    fun rotate(matrix: Array<IntArray>): Unit {
+    fun rotate(matrix: Array<IntArray>) {
         var startpoint = 0
         var numberOfElements = matrix.size
         while (numberOfElements > 1) {
