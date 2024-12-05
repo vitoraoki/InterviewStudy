@@ -26,7 +26,7 @@ abstract class DomainModule {
     abstract fun bindsDeletePostUseCase(useCase: DeletePost): DeletePostUseCase
 
     @Binds
-    abstract fun bindsDeleteAllPostsUseCase(useCase: DeleteAllPosts): DeletePostUseCase
+    abstract fun bindsDeleteAllPostsUseCase(useCase: DeleteAllPosts): DeleteAllPostsUseCase
 
     @Binds
     abstract fun bindsUpdatePostUseCase(useCase: UpdatePost): UpdatePostUseCase

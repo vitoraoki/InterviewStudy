@@ -1,4 +1,4 @@
-package com.programming.study.architecturesexample.presentation
+package com.programming.study.architecturesexample.presentation.mvvm
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -16,9 +16,9 @@ import com.programming.study.architecturesexample.ui.theme.ArchitecturesExampleT
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : ComponentActivity() {
+class MvvmActivity : ComponentActivity() {
 
-    private val viewModel: MainViewModel by viewModels()
+    private val viewModel: MvvmViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

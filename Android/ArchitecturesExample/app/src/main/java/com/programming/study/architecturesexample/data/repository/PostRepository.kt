@@ -48,7 +48,7 @@ class PostRepositoryImpl @Inject constructor(
         postDataSource.getAllPosts().map(::mapEntityToModel)
 
     private fun mapInsertModelToEntity(insertModel: InsertPostModel): PostEntity =
-        PostEntity(text = insertModel.text, isLiked = insertModel.isLiked)
+        PostEntity(text = insertModel.text, isLiked = false)
 
     private fun mapModelToEntity(postModel: PostModel): PostEntity =
         PostEntity(id = postModel.id, text = postModel.text, isLiked = postModel.isLiked)
