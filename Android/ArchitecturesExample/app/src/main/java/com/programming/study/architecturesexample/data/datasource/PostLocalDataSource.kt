@@ -16,6 +16,10 @@ class PostLocalDataSource @Inject constructor(
         postDao.deletePost(post)
     }
 
+    override suspend fun deleteAllPosts() {
+        postDao.deleteAllPosts()
+    }
+
     override suspend fun updatePost(post: PostEntity) {
         postDao.updatePost(post)
     }

@@ -7,6 +7,8 @@ interface PostDataSource {
 
     suspend fun deletePost(post: PostEntity)
 
+    suspend fun deleteAllPosts()
+
     suspend fun updatePost(post: PostEntity)
 
     suspend fun getAllPosts(): List<PostEntity>

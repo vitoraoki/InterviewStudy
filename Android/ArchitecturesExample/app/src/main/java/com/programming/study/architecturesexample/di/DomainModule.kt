@@ -1,5 +1,7 @@
 package com.programming.study.architecturesexample.di
 
+import com.programming.study.architecturesexample.domain.usecase.DeleteAllPosts
+import com.programming.study.architecturesexample.domain.usecase.DeleteAllPostsUseCase
 import com.programming.study.architecturesexample.domain.usecase.DeletePost
 import com.programming.study.architecturesexample.domain.usecase.DeletePostUseCase
 import com.programming.study.architecturesexample.domain.usecase.GetAllPosts
@@ -22,6 +24,9 @@ abstract class DomainModule {
 
     @Binds
     abstract fun bindsDeletePostUseCase(useCase: DeletePost): DeletePostUseCase
+
+    @Binds
+    abstract fun bindsDeleteAllPostsUseCase(useCase: DeleteAllPosts): DeletePostUseCase
 
     @Binds
     abstract fun bindsUpdatePostUseCase(useCase: UpdatePost): UpdatePostUseCase

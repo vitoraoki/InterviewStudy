@@ -11,6 +11,8 @@ interface PostRepository {
 
     suspend fun deletePost(post: PostModel)
 
+    suspend fun deleteAllPosts()
+
     suspend fun updatePost(post: PostModel)
 
     suspend fun getAllPosts(): List<PostModel>
@@ -30,6 +32,10 @@ class PostRepositoryImpl @Inject constructor(
         mapModelToEntity(post).let {
             postDataSource.deletePost(it)
         }
+    }
+
+    override suspend fun deleteAllPosts() {
+        postDataSource.deleteAllPosts()
     }
 
     override suspend fun updatePost(post: PostModel) {
