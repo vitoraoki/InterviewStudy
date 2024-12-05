@@ -17,6 +17,9 @@ This section has a list of references used to study the theory of Algorithms, An
 ## 📱 Android
 
 - [Philipp Lackner Result handling example](https://www.youtube.com/watch?v=MiLN2vs2Oe0)
+- [Setup Room Database](https://developer.android.com/training/data-storage/room)
+- [Content Edge-to-edge ](https://developer.android.com/develop/ui/compose/layouts/insets)
+- [Content Edge-to-edge Compose](https://developer.android.com/develop/ui/views/layout/edge-to-edge)
 
 ### Architecture
 - [Android app architecture guide](https://developer.android.com/topic/architecture)
