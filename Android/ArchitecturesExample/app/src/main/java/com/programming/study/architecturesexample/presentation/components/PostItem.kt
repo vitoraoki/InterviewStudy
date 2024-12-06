@@ -13,6 +13,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewParameter
+import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.programming.study.architecturesexample.R
@@ -65,16 +67,30 @@ private fun getLikeResource(isLiked: Boolean) = if (isLiked) {
     R.drawable.thumbs_up_lined
 }
 
+private class PostModelProvider: PreviewParameterProvider<PostModel> {
+    override val values: Sequence<PostModel> = sequenceOf(
+        PostModel(
+            id = 1,
+            text = "Post",
+            isLiked = false
+        ),
+        PostModel(
+            id = 1,
+            text = "Post",
+            isLiked = true
+        )
+    )
+
+}
+
 @Preview(showBackground = true)
 @Composable
-private fun PostItemPreview() {
+private fun PostItemPreview(
+    @PreviewParameter(PostModelProvider::class) post: PostModel
+) {
     ArchitecturesExampleTheme {
         PostItem(
-            post = PostModel(
-                id = 1,
-                text = "kldjskfljkdskfljkldsjklldsfkldjsklfjaklsldkjfldklsjlafjl;dskflkdsl;kfadlskfl;dskfl;kdsl;kf;kffjkldsajklfjdklsfjjdkslfds",
-                isLiked = false
-            ),
+            post = post,
             onLikeClick = {}
         )
     }
