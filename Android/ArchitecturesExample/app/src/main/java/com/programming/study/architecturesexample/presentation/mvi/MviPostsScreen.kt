@@ -12,6 +12,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -27,7 +28,7 @@ fun MviPostsScreenRoot(
     Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
         MviPostsScreen(
             modifier = Modifier.padding(innerPadding),
-            state = viewModel.state
+            state = viewModel.state.collectAsState().value
         ) { action ->
             viewModel.executeActions(action)
         }

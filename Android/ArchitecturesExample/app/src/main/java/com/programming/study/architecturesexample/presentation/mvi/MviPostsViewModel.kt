@@ -1,8 +1,5 @@
 package com.programming.study.architecturesexample.presentation.mvi
 
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.programming.study.architecturesexample.domain.model.InsertPostModel
@@ -13,6 +10,7 @@ import com.programming.study.architecturesexample.domain.usecase.InsertPostsUseC
 import com.programming.study.architecturesexample.domain.usecase.UpdatePostUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -24,8 +22,7 @@ class MviPostsViewModel @Inject constructor(
     private val updatePostUseCase: UpdatePostUseCase
 ): ViewModel() {
 
-    var state by mutableStateOf(MviPostsState())
-        private set
+    val state: MutableStateFlow<MviPostsState> = MutableStateFlow(MviPostsState())
 
     init {
         updateState()
@@ -66,7 +63,7 @@ class MviPostsViewModel @Inject constructor(
     private fun updateState() {
         viewModelScope.launch(Dispatchers.IO) {
             val posts = getAllPostsUseCase()
-            state = state.copy(
+            state.value = state.value.copy(
                 posts = posts,
                 isDeleteButtonEnabled = posts.isNotEmpty()
             )
