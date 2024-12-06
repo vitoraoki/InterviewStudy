@@ -30,7 +30,7 @@ fun PostItem(
             .padding(8.dp)
     ) {
         Text(
-            text = post.text,
+            text = "${post.id} - ${post.text}",
             fontSize = 16.sp,
             maxLines = 2,
             overflow = TextOverflow.Ellipsis
