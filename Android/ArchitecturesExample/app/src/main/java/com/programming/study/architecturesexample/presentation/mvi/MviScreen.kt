@@ -18,15 +18,16 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.programming.study.architecturesexample.domain.model.PostModel
+import com.programming.study.architecturesexample.presentation.components.Header
 import com.programming.study.architecturesexample.presentation.components.PostItem
 import com.programming.study.architecturesexample.ui.theme.ArchitecturesExampleTheme
 
 @Composable
 fun MviPostsScreenRoot(
-    viewModel: MviPostsViewModel = viewModel()
+    viewModel: MviViewModel = viewModel()
 ) {
     Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-        MviPostsScreen(
+        MviScreen(
             modifier = Modifier.padding(innerPadding),
             state = viewModel.state.collectAsState().value
         ) { action ->
@@ -36,12 +37,13 @@ fun MviPostsScreenRoot(
 }
 
 @Composable
-private fun MviPostsScreen(
+private fun MviScreen(
     modifier: Modifier,
-    state: MviPostsState,
-    executeAction: (MviPostsAction) -> Unit
+    state: MviState,
+    executeAction: (MviAction) -> Unit
 ) {
     Column(modifier = modifier.fillMaxSize()) {
+        Header("MVI")
         Buttons(state.isDeleteButtonEnabled, executeAction)
         PostsList(state.posts, executeAction)
     }
@@ -50,7 +52,7 @@ private fun MviPostsScreen(
 @Composable
 private fun Buttons(
     isDeleteButtonEnabled: Boolean,
-    executeAction: (MviPostsAction) -> Unit
+    executeAction: (MviAction) -> Unit
 ) {
     Row(
         modifier = Modifier
@@ -61,7 +63,7 @@ private fun Buttons(
         Button(
             modifier = Modifier.weight(1f),
             onClick = {
-                executeAction(MviPostsAction.CreatePost)
+                executeAction(MviAction.CreatePost)
             }
         ) {
             Text("Create Post")
@@ -71,7 +73,7 @@ private fun Buttons(
             modifier = Modifier.weight(1f),
             enabled = isDeleteButtonEnabled,
             onClick = {
-                executeAction(MviPostsAction.DeleteAllPosts)
+                executeAction(MviAction.DeleteAllPosts)
             }
         ) {
             Text("Delete all Posts")
@@ -82,13 +84,13 @@ private fun Buttons(
 @Composable
 private fun PostsList(
     posts: List<PostModel>,
-    executeAction: (MviPostsAction) -> Unit
+    executeAction: (MviAction) -> Unit
 ) {
     LazyColumn(modifier = Modifier.fillMaxSize()) {
         items(posts) { post ->
             PostItem(post) {
                 executeAction(
-                    MviPostsAction.LikePost(post)
+                    MviAction.LikePost(post)
                 )
             }
         }
@@ -97,11 +99,11 @@ private fun PostsList(
 
 @Preview(showBackground = true)
 @Composable
-private fun ComposablePreview() {
+private fun MviScreenPreview() {
     ArchitecturesExampleTheme {
-        MviPostsScreen(
+        MviScreen(
             modifier = Modifier,
-            MviPostsState(
+            MviState(
                 posts = listOf(
                     PostModel(id = 1, text = "Post1", isLiked = false),
                     PostModel(id = 2, text = "Post2", isLiked = true),

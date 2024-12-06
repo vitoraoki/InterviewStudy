@@ -7,12 +7,12 @@ import com.programming.study.architecturesexample.ui.theme.ArchitecturesExampleT
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MviPostsActivity : ComponentActivity() {
+class MviActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ArchitecturesExampleTheme {
+            ArchitecturesExampleTheme(darkTheme = false) {
                 MviPostsScreenRoot()
             }
         }

@@ -11,28 +11,30 @@ import com.programming.study.architecturesexample.domain.usecase.UpdatePostUseCa
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class MviPostsViewModel @Inject constructor(
+class MviViewModel @Inject constructor(
     private val getAllPostsUseCase: GetAllPostsUseCase,
     private val insertPostsUseCase: InsertPostsUseCase,
     private val deleteAllPostsUseCase: DeleteAllPostsUseCase,
     private val updatePostUseCase: UpdatePostUseCase
 ): ViewModel() {
 
-    val state: MutableStateFlow<MviPostsState> = MutableStateFlow(MviPostsState())
+    private val _state: MutableStateFlow<MviState> = MutableStateFlow(MviState())
+    val state: StateFlow<MviState> = _state
 
     init {
         updateState()
     }
 
-    fun executeActions(action: MviPostsAction) {
+    fun executeActions(action: MviAction) {
         when (action) {
-            MviPostsAction.CreatePost -> createPost()
-            MviPostsAction.DeleteAllPosts -> deleteAllPosts()
-            is MviPostsAction.LikePost -> likePost(action.post)
+            MviAction.CreatePost -> createPost()
+            MviAction.DeleteAllPosts -> deleteAllPosts()
+            is MviAction.LikePost -> likePost(action.post)
         }
     }
 
@@ -63,7 +65,7 @@ class MviPostsViewModel @Inject constructor(
     private fun updateState() {
         viewModelScope.launch(Dispatchers.IO) {
             val posts = getAllPostsUseCase()
-            state.value = state.value.copy(
+            _state.value = _state.value.copy(
                 posts = posts,
                 isDeleteButtonEnabled = posts.isNotEmpty()
             )
