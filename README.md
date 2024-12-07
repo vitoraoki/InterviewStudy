@@ -45,6 +45,7 @@ This section has a list of references used to study the theory of Algorithms, An
 ### Dependency Injection
 - [Android Dependency Injection](https://developer.android.com/training/dependency-injection)
 - [Dependency Injection with Dagger](https://developer.android.com/training/dependency-injection/dagger-android)
+- [Dagger Code Labs](https://developer.android.com/codelabs/android-dagger#0)
 - [Dependency Injection with Hilt](https://developer.android.com/training/dependency-injection/hilt-android)
 - [Dependency Injection with Anvil](https://gpeal.medium.com/dagger-anvil-learning-to-love-dependency-injection-on-android-8fad3d5530c9)
 - [Dependency Injection with Koin](https://insert-koin.io/docs/reference/koin-android/start)
