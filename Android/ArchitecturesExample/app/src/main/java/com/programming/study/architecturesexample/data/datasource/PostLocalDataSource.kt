@@ -9,7 +9,7 @@ class PostLocalDataSource @Inject constructor(
 ) : PostDataSource {
 
     override suspend fun insertPosts(posts: List<PostEntity>) {
-        postDao.insertPosts(*posts.toTypedArray())
+        postDao.insertPosts(posts)
     }
 
     override suspend fun deletePost(post: PostEntity) {

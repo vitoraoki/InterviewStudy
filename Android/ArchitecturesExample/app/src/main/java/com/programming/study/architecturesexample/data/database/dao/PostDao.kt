@@ -16,7 +16,7 @@ const val QUERY_DELETE_ALL_POSTS = "DELETE FROM $POST_TABLE_NAME"
 interface PostDao {
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    fun insertPosts(vararg posts: PostEntity)
+    fun insertPosts(posts: List<PostEntity>)
 
     @Delete
     fun deletePost(post: PostEntity)

@@ -18,7 +18,7 @@ class PostLocalDataSourceTest {
     private val dataSource = PostLocalDataSource(postDao)
 
     init {
-        every { postDao.insertPosts(*anyVararg()) } just runs
+        every { postDao.insertPosts(any()) } just runs
         every { postDao.deletePost(any()) } just runs
         every { postDao.deleteAllPosts() } just runs
         every { postDao.updatePost(any()) } just runs
@@ -31,7 +31,7 @@ class PostLocalDataSourceTest {
         dataSource.insertPosts(posts)
 
         verify(exactly = 1) {
-            postDao.insertPosts(*posts.toTypedArray())
+            postDao.insertPosts(posts)
         }
     }
 
