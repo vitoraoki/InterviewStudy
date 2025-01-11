@@ -28,6 +28,8 @@ This section has a list of references used to study the theory of Algorithms, An
 
 ### Architecture
 - [Android app architecture guide](https://developer.android.com/topic/architecture)
+- [Android Offline-First architecture](https://developer.android.com/topic/architecture/data-layer/offline-first)
+- [Caching Strategies in Android](https://herrbert74.github.io/posts/caching-strategies-in-android/)
 - [MVVM x MVI Comparison Article (PT-BR only)](https://medium.com/@lucas-cordeiro/mvvm-vs-mvi-guia-prático-para-desenvolvedores-android-25bfade62478)
 - [MVVM and MVI combiined (Example against MVC)](https://medium.com/@mortitech/combining-mvvm-and-mvi-with-kotlin-flows-part1-48f7dd426341)
 - [MVC x MVP x MVVM (PT-BR only)](https://cwi.com.br/blog/design-patterns-android/)
